@@ -1,0 +1,57 @@
+{% extends 'base_layouts.html' %}
+{% load static %}
+   {% block content %}
+<style>
+    th,
+    td {
+        padding: 10px 15px !important;
+    }
+
+    td li {
+        margin: 10px 15px !important;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+</style>
+
+    <section>
+        <div class="container">
+            <h3 class="ms-2 heading mb-3">Standard Suggestions</h3>
+            <table class="table table-bordered table-s">
+                <tr class="bg-color" style="border: 1px solid #1d477f;">
+                    <th class="text-white" style="border-right: 1px solid gray;">Top Features</th>
+                    <th class="text-white">Suggestions</th>
+                </tr>
+
+                <tbody class="border" id="s_tr">
+
+                    {% for f in f_type %}
+                    {% for f1 in f %}
+                    <tr class="bg-white">
+                        <td>{{f1.featureName}}</td>
+                        <td class="li1">
+                            {% for s in s_name %}
+                            {% for s1 in s%}
+                            {% if s1.featureID.id == f1.id %}
+                            <li >{{ s1.suggestionText }}</li>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                </tbody>
+            </table>
+            <table class="table table-bordered d">
+                
+                
+            </table>
+            
+        </div>
+       
+      
+    </section>
+   
+    {% endblock %}

@@ -1,0 +1,576 @@
+{% extends 'base_layouts.html' %}
+{% load static %}
+{% block content %}
+
+
+<section>
+    <div class="container">
+        <h3 class="ms-2 heading mb-3"> <svg class="me-3" id="Layer_1" data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.45 42.79" style="height: 40px; width: 40px;
+            fill: #234389;">
+                <defs _ngcontent-mbt-c56=""></defs>
+                <g _ngcontent-mbt-c56="" id="Group_9" data-name="Group 9">
+                    <path _ngcontent-mbt-c56="" id="Path_210" data-name="Path 210"
+                        d="M41.72,16.76c-.13-.44-.52-.42-.86-.47-1.46-.21-2.93-.41-4.38-.63A1.45,1.45,0,0,1,35.26,15,15.86,15.86,0,0,0,25.18,7.6a1.28,1.28,0,0,1-1-.82C23.49,5.18,22.72,3.61,22,2c-.15-.31-.24-.68-.69-.7s-.61.39-.78.73c-.72,1.52-1.49,3-2.14,4.57a1.65,1.65,0,0,1-1.29,1A15.76,15.76,0,0,0,7.5,14.6a2.17,2.17,0,0,1-1.74,1.11c-1.4.15-2.78.38-4.17.59-.34.05-.72,0-.82.5s.16.58.38.8c1.11,1.08,2.2,2.18,3.32,3.25A1.3,1.3,0,0,1,4.94,22,15.94,15.94,0,0,0,8.65,34a2.19,2.19,0,0,1,.49,2c-.28,1.56-.53,3.12-.77,4.58-.06,1,.3,1.23,1.15.77q2.16-1.2,4.28-2.47a1.47,1.47,0,0,1,1.46-.13,15.74,15.74,0,0,0,11.91,0,1.47,1.47,0,0,1,1.46.13c1.38.84,2.79,1.62,4.19,2.43.34.2.69.42,1.07.14s.21-.63.15-1c-.27-1.67-.52-3.33-.82-5a1.2,1.2,0,0,1,.28-1.14,15.88,15.88,0,0,0,4-12.25A1.42,1.42,0,0,1,38,20.79c1.09-1,2.16-2.11,3.24-3.18C41.49,17.39,41.84,17.19,41.72,16.76ZM10.65,27.24c-.34,1.92-.67,3.85-1,6a15.56,15.56,0,0,1-3.5-10.73C7.68,24,9,25.29,10.38,26.6a.66.66,0,0,1,.26.64Zm-2.2-12a15.53,15.53,0,0,1,8.81-6.4c-.85,1.82-1.63,3.45-2.39,5.1a.8.8,0,0,1-.71.5c-1.84.23-3.68.51-5.71.8Zm7.46,22.37,5-2.87c.33-.18.58-.05.88.12,1.54.89,3.1,1.76,4.82,2.74a15.5,15.5,0,0,1-10.68,0ZM21.17,31a7.39,7.39,0,1,1,.06,0h-.06Zm7.27-16.48a.93.93,0,0,1-.87-.6c-.74-1.62-1.5-3.22-2.34-5A15.09,15.09,0,0,1,34,15.28c-2-.29-3.78-.56-5.55-.79Zm4.43,18.65c-.3-1.73-.51-3.3-.86-4.84a2.26,2.26,0,0,1,.84-2.54c1.18-1,2.22-2.11,3.51-3.36a15.11,15.11,0,0,1-3.49,10.74Z"
+                        class="cls-1"></path>
+                    <path _ngcontent-mbt-c56="" id="Path_211" data-name="Path 211"
+                        d="M19.85,25l4-3.6c.36-.33.8-.79,1.24-.27s-.07.88-.44,1.2c-1.4,1.24-2.81,2.44-4.18,3.71-.63.58-1.07.5-1.54-.15s-1.05-1.33-1.57-2c-.27-.35-.35-.73.05-1s.67-.08.92.24C18.85,23.73,19.33,24.34,19.85,25Z"
+                        class="cls-1"></path>
+                </g>
+            </svg>Good Cluster of Prospective Users</h3>
+            <div class="bg-white">
+            <table class="table table-bordered">
+                <thead>
+                  <tr style="background: #15234e;" class="text-white">
+                    <th class="tg-0pky mat-header-cell th-top">
+                      <span style="font-weight: bold">TERMS</span>
+                    </th>
+                    <th class="tg-0pky mat-header-cell th-top">
+                      <span style="font-weight: bold">DEFINITION</span>
+                    </th>
+                    <th class="tg-0pky mat-header-cell th-top">
+                      <span style="font-weight: bold">USAGE</span>
+                    </th>
+                    <th class="tg-0pky mat-header-cell th-top">
+                      <span style="font-weight: bold">UNITS</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="border">
+                  <tr>
+                    <td class="tg-0pky">DXI</td>
+                    <td class="tg-0pky">
+                      DXI is the Digital Engagement Index.DXI stands for Digital Experience
+                      Index and is a measure of how good of an experience visitors are
+                      having on the site.
+                    </td>
+                    <td class="tg-0pky">
+                      To calculate User's experience or user's engagemen with website
+                    </td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Prospective buyers</td>
+                    <td class="tg-0pky">
+                      a prospective buyer is any potential buying visitors that could be a
+                      fit for the purchase of a company that is being marketed in a
+                      sell-side transaction.
+                    </td>
+                    <td class="tg-0pky">To increase conversion of users.</td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Source</td>
+                    <td class="tg-0pky">
+                      The Source is where users website's traffic comes from. Possible
+                      sources include: “google” (the name of a search engine),
+                      “facebook.com” (the name of a referring site), and “direct” (users
+                      that typed your URL directly into their browser, or who had bookmarked
+                      your site).
+                    </td>
+                    <td class="tg-0pky">To find user's website's traffic comes from.</td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Top Supplier</td>
+                    <td class="tg-0pky">
+                      The meaning of BEST SELLER is an article (such as a book) whose sales
+                      are among the highest of its class.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Revenue</td>
+                    <td class="tg-0pky">
+                      revenue is the total amount of income generated by the sale of goods
+                      and services related to the primary operations of the business.
+                      Commercial revenue may also be referred to as sales or as turnover.
+                      Some companies receive revenue from interest, royalties, or other
+                      fees.
+                    </td>
+                    <td class="tg-0pky">Total revanue of client.</td>
+                    <td class="tg-0pky">Dollar</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Customers</td>
+                    <td class="tg-0pky">
+                      In sales, commerce, and economics, a customer is the recipient of a
+                      good, service, product or an idea - obtained from a seller, vendor, or
+                      supplier via a financial transaction or exchange for money or some
+                      other valuable consideration.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Visitors</td>
+                    <td class="tg-0pky">A person who accesses a website.</td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Conversion</td>
+                    <td class="tg-0pky">
+                      Conversion happens when website users convert into customers or
+                      subscribers.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Conversion Rate for EC</td>
+                    <td class="tg-0pky">
+                      Conversion rate is total number of customers divided by total number
+                      of visitors.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Conversion Rate for Non EC</td>
+                    <td class="tg-0pky">
+                      The goal conversion rate is calculated as the number of goal
+                      conversions divided by the number of sessions.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Target DXI</td>
+                    <td class="tg-0pky">
+                      Target DXI is the threshold value for DXI score. Target DXI implies
+                      that if DXI scores greater than Target DXI then the user must be a
+                      propsective buyer.
+                    </td>
+                    <td class="tg-0pky">To increase more conversion.</td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Target Conversion Rate</td>
+                    <td class="tg-0pky">
+                      Target conversion rate is the current conversion rate * 1.33.
+                    </td>
+                    <td class="tg-0pky">To increase more conversion.</td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">**CUSTOMERS**</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Customer Traction</td>
+                    <td class="tg-0pky">
+                      Customer traction shows the geography of the top customer base.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Revenue</td>
+                    <td class="tg-0pky">
+                      Revenue is the total amount of income generated by the sale of goods
+                      and services related to the primary operations of the business.
+                      Commercial revenue may also be referred to as sales or as turnover.
+                      Some companies receive revenue from interest, royalties, or other
+                      fees.
+                    </td>
+                    <td class="tg-0pky">Total revanue of client.</td>
+                    <td class="tg-0pky">Dollar</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Visitors</td>
+                    <td class="tg-0pky">A person who accesses a website.</td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Conversion Rate for EC</td>
+                    <td class="tg-0pky">
+                      Conversion is nothing but total no of cusotmers devided by total no of
+                      visitors.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Customer Segmentation</td>
+                    <td class="tg-0pky">
+                      Customer segmentation is the practice of dividing a customer base into
+                      groups of individuals that are similar in specific ways relevant to
+                      marketing, and spending habits.<br />RFMX a proprietary methodology of
+                      Keydabra used for customer segmentation that helps to classify buyers
+                      (Loosing, Loyal, Top etc) based on their engagement such as RFM
+                      (stands for Recency, Frequency, Monetary &amp; DXI).<br /><br />
+                    </td>
+                    <td class="tg-0pky">Segment customer on their behaviour</td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Top Customers</td>
+                    <td class="tg-0pky">
+                      Reward these customers, they can be early adopters for new product
+                      launches.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Loyal Customers</td>
+                    <td class="tg-0pky">
+                      Responsive customers to our promotions, promote higher-value products
+                      using personalized communication. Motivate them to share their
+                      positive experiences
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Hibernating Customers</td>
+                    <td class="tg-0pky">
+                      Recreate brand value. Offer relevant products and provide personalized
+                      &amp; good offers.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">%**TRANSACTIONS**</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Transaction</td>
+                    <td class="tg-0pky">
+                      Consumer transaction means a sale, lease, assignment, award by chance,
+                      or other transfer of an item of goods, a service, a franchise, or an
+                      intangible, to an individual for purposes that are primarily personal,
+                      family, or household, or solicitation to supply any of these things.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Income</td>
+                    <td class="tg-0pky">
+                      Income is the amount of money received by a person, group or company
+                      during a certain period of time.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Dollar</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Number of Transactions</td>
+                    <td class="tg-0pky">
+                      Number of transactions is calculated by using the number of
+                      transactions over a specified period of time and dividing that by the
+                      time period of the desired outcome
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Number of items in purchase</td>
+                    <td class="tg-0pky">
+                      A purchase means to take possession of a given asset, property, item
+                      or right by paying a predetermined amount of money for the transaction
+                      to be completed successfully.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">Top Predicted Products</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Product Details</td>
+                    <td class="tg-0pky">
+                      A product detail page is a web page on an eCommerce site that presents
+                      the description of a specific product in view. The details displayed
+                      often include size, color, price, shipping information, reviews, and
+                      other relevant information customers may want to know before making a
+                      purchase.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Quantity</td>
+                    <td class="tg-0pky">
+                      the amount or number of a material or abstract thing not usually
+                      estimated by spatial measurement.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Similar Products</td>
+                    <td class="tg-0pky">
+                      Similar products are products that perform similar functions but in
+                      different contexts or for different purposes.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold"
+                        >Product Recommendations Using Market Basket Analysis</span
+                      >
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">Top Items</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Antecedent Name</td>
+                    <td class="tg-0pky">
+                      the significant events, conditions, and traits of one's earlier life.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Consequent Name</td>
+                    <td class="tg-0pky">
+                      consequent is something that follows as a result, or logically
+                      follows.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Confidence Score</td>
+                    <td class="tg-0pky">
+                      A confidence score is calculated as an evaluation standard. This
+                      confidence score shows the probability of the image being detected
+                      correctly by the algorithm and is given as a percentage.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">**CATEGARICAL DXI**</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Transactional DXI</td>
+                    <td class="tg-0pky">
+                      The parameters related to ecommerce like transactions per user, buy to
+                      detail rate etc. DXI score for transactional features present in
+                      google analytics.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">KPI DXI</td>
+                    <td class="tg-0pky">
+                      The parameters related to internal search are considered as KPI (Key
+                      Performance Indicator) parameter.<br />DXI score for kye performance
+                      indicator features present in google analytics. KPI used to
+                      monitor,analyze and optimize users behaviour on website
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Behavioural DXI</td>
+                    <td class="tg-0pky">
+                      The parameters help understand the visitor behaviour on the website
+                      like the browser or OS used to visit the site, products page visited
+                      etc<br />
+                      DXI score for Behavioural features present in google analytics.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">Number</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Visual DXI</td>
+                    <td class="tg-0pky">
+                      The parameters related to the site performanceand content organization
+                      are configured as Visual parameters. e.g- page load time, unique
+                      pageviews. DXI score for Visual features present in google analytics.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Aprori algorithm</td>
+                    <td class="tg-0pky">
+                      The Apriori algorithm is used for mining frequent itemsets and
+                      devising association rules from a transactional database. The
+                      parameters “support” and “confidence” are used. Support refers to
+                      items’ frequency of occurrence; confidence is a conditional
+                      probability.
+                    </td>
+                    <td class="tg-0pky">To find in top products.</td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">**site Tab**</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Heat Map Analysis</td>
+                    <td class="tg-0pky">
+                      A heatmap (or heat map) is a graphical representation of data where
+                      values are depicted by color.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">**Behavior Tab**</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Sentiment Analysis</td>
+                    <td class="tg-0pky">
+                      Sentiment analysis is a natural language processing technique used to
+                      determine whether data is positive, negative, or neutral. It is
+                      performed on textual data to help businesses monitor brand and product
+                      sentiment in customer feedback, and understand customer needs
+                    </td>
+                    <td class="tg-0pky">To analyze user behavior.</td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Good Cluster of Prospective Users</td>
+                    <td class="tg-0pky">
+                      This is a graphical representation of demographics having high DXI
+                      values.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky"><span style="font-weight: bold">**RFMX**</span></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">RFMX</td>
+                    <td class="tg-0pky">
+                      RFMX stands for Recency, Frequency, Monetary &amp; DXI.It is a method
+                      used to determine customer value by looking at Four dimensions -&gt;
+                      RFMX.It is easiest form of customer segmentation.Used for reactivation
+                      campaigns,high value customer programs &amp; for combating churns.
+                    </td>
+                    <td class="tg-0pky">For User's segmentation.</td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">
+                      <span style="font-weight: bold">**SUGGESTION**</span>
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Top Customers</td>
+                    <td class="tg-0pky">
+                      Reward these customers, they can be early adopters for new product
+                      launches.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Loyal Customers</td>
+                    <td class="tg-0pky">
+                      Responsive customers to our promotions, promote higher-value products
+                      using personalized communication. Motivate them to share their
+                      positive experiences
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Hibernating Customers</td>
+                    <td class="tg-0pky">
+                      Recreate brand value. Offer relevant products and provide personalized
+                      &amp; good offers.
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">Loosing Customers</td>
+                    <td class="tg-0pky">
+                      Make our presence known by launching different marketing campaignswith
+                      special offers
+                    </td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky">%</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky"><span style="font-weight: bold">**CNN**</span></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                    <td class="tg-0pky"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0pky">CNN</td>
+                    <td class="tg-0pky">
+                      Suggests similar-looking products to what users are browsing that
+                      could result in higher customer engagement and hence lead to
+                      conversion.A convolutional neural network, or CNN, is a deep learning
+                      neural network designed for processing structured arrays of data such
+                      as images. Convolutional neural networks are widely used in computer
+                      vision and have become the state of the art for many visual
+                      applications such as image classification, and have also found success
+                      in natural language processing for text classification.
+                    </td>
+                    <td class="tg-0pky">For User's segmentation.</td>
+                    <td class="tg-0pky">N.A.</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+
+    </div>
+
+
+    <!-----<table class="d"></table>----->
+
+
+</section>
+
+
+
+{% endblock %}

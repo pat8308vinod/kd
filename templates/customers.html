@@ -1,0 +1,198 @@
+{% extends 'base_layouts.html' %}
+{% load static %}
+{% block content %}
+<style>
+    th {
+        font-weight: 500 !important;
+    }
+
+    .nav-pills .nav-link {
+        border-radius: 0rem !important;
+        color: #15234e;
+        font-weight: 600;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #15234e;
+
+    }
+
+    .nav-fill .nav-item {
+        background: #ffffff;
+        border: 1px solid gray;
+    }
+</style>
+
+<section>
+    <div class="container">
+        <h3 class="ms-2 heading mb-3"> <img class="me-3" src="{% static 'images/customer-traction.svg' %}"
+                style="height:50px;width: 50px;">Customer Traction</h3>
+
+
+        <div class="row heat-tabs" style="">
+            <ul class="nav nav-pills nav-fill nav-justified" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">
+                        Revenue
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">
+                        Visitors
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false"
+                        data-tool-tip="Conversion rate is total number of customers divided by total number of visitors.">
+                        Conversion Rate
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent" style="padding-left: 0;">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr id="current_tr_city">
+                                <th class="text-white fw-bold text-center" style="background: #15234e 0% 0% no-repeat padding-box;
+                         box-shadow: inset 0px 3px 6px #00000029;">Total</th>
+                                {% for c in keydata_city %}
+                                <th class="" style="background: #cbc0ca 0% 0% no-repeat padding-box;
+                         box-shadow: inset 0px 3px 6px #00000029;">
+                                    {{c.name}}
+                                </th>
+                                {%endfor%}
+                            </tr>
+                            <tbody class="border">
+                                <tr id="current_tr_revenue">
+
+                                    <td class="bg-white text-center">$
+                                        <script> document.write(({{ sum }}).toFixed(2))</script>
+                                    </td>
+                                    {% for c in keydata_city %}
+                                    <td class="bg-white">
+                                        $
+                                        <script> document.write(({{ c.revenue }}).toFixed(2))</script>
+
+                                    </td>
+                                    {%endfor%}
+                                </tr>
+                                <tr id="myTable1"></tr>
+                                <tr id="myTable2"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <table class="table table-bordered">
+                        <tr id="current_visitor_city">
+                            <th class="text-white fw-bold text-center" style="background: #15234e 0% 0% no-repeat padding-box;
+                                box-shadow: inset 0px 3px 6px #00000029;">Total</th>
+                            {% for c in keydata_city %}
+                            <th class="" style="background: #cbc0ca 0% 0% no-repeat padding-box;
+                                box-shadow: inset 0px 3px 6px #00000029;">
+                                {{c.name}}
+                            </th>
+                            {%endfor%}
+                        </tr>
+                        <tbody class="border">
+                            <tr id="current_visitor_tr">
+
+                                <td class="bg-white text-center">
+                                    <script> document.write(({{ sum1 }}).toFixed(2))</script>
+                                </td>
+                                {% for c in keydata_city %}
+                                <td class="bg-white">
+                                    <script> document.write(({{ c.userCount }}).toFixed(2))</script>
+
+                                </td>
+                                {%endfor%}
+                            </tr>
+                            <tr id="myTable3"></tr>
+                            <tr id="myTable4"></tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <table class="table table-bordered">
+                        <tr id="current_conver_city">
+                            <th class="text-white fw-bold text-center" style="background: #15234e 0% 0% no-repeat padding-box;
+                                box-shadow: inset 0px 3px 6px #00000029;">Total</th>
+                            {% for c in keydata_city %}
+                            <th class="" style="background: #cbc0ca 0% 0% no-repeat padding-box;
+                                box-shadow: inset 0px 3px 6px #00000029;">
+                                {{c.name}}
+                            </th>
+                            {%endfor%}
+                        </tr>
+                        <tbody class="border">
+                            <tr id="current_conver_rate_tr">
+
+                                <td class="bg-white text-center" style="background: #15234e">
+                                    <script> document.write(({{ sum2 }}).toFixed(2))</script>%
+                                </td>
+                                {% for c in keydata_city %}
+                                <td class="bg-white">
+                                    <script> document.write(({{ c.conversionRate }}).toFixed(2))</script>%
+
+                                </td>
+                                {%endfor%}
+                            </tr>
+                            <tr id="myTable5"></tr>
+                            <tr id="myTable6"></tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <h3 class="ms-2 heading mb-3"> <img class="me-3" src="{% static 'images/customer-traction.svg' %}"
+                style="height:50px;width: 50px;">Customer Segmentation </h3>
+        <div class="chart-seg">
+            <div class="" id="custor_seg_pie_chart" style="height:400px;" class="custor_seg_pie_chart">
+            </div>
+        </div>
+        <!-----<table class="d"></table>----->
+
+
+</section>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+   
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Contry', 'Mhl'],
+            ['loosing', {{ customer_segmantaion_data.loosingScore }}],
+            ['loyal', {{ customer_segmantaion_data.loyalScore }}],
+            ['hibernating', {{ customer_segmantaion_data.hibernatingScore }}],
+            ['top', {{ customer_segmantaion_data.topScore }}],
+    
+       ]);
+
+    var options = {
+        title: '',
+
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('custor_seg_pie_chart'));
+    chart.draw(data, options);
+    }
+   
+</script>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% load static %} 
+
+<footer id="footer" class="footer">
+  
+    <div class="copyright"> &copy; Copyright <strong><span>Keydabra </span></strong>. All Rights Reserved</div>
+    
+ </footer>
+ <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>  
+  
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'js/validate.js' %}"></script>
+   <script src="{% static 'js/main.js' %}"></script> 
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+   
+   <script>
+      
+     $('body').on('change', "select[name='r_month']", function(){
+       $( "select[name='r_month'] option:selected" ).each(function() {
+        r_month = $( this ).val();
+       });
+    
+       
+       $.ajax({
+        type: "GET",
+        url: "/si_report/",
+        data: {'r_month': r_month},
+        success: function(response) {
+            data = response.period
+            data1 = response.summary
+            data2 = response.k_city
+            
+           
+        },
+        error: function() {
+            alert('Error occurred');
+        }
+       });
+   });
+
+
+
+
+
+
+   
+   </script>
+
+        
+</body>
+</html>

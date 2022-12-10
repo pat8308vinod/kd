@@ -1,0 +1,196 @@
+{% extends 'base_layouts.html' %}
+{% load static %}
+{% block content %}
+<section>
+  <div class="container">
+    <h3 class="ms-2 heading mb-3"><svg _ngcontent-kmw-c157="" class="me-2" id="Layer_1" data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.45 42.79" style="height:40px;width:40px; fill: #234389;">
+        <g _ngcontent-kmw-c157="" id="Group_13" data-name="Group 13">
+          <path _ngcontent-kmw-c157="" id="Path_287" data-name="Path 287"
+            d="M20.32,42.52,19,42.39a19.09,19.09,0,0,1-7.66-2.48A20.81,20.81,0,0,1,1.26,26.14,20.24,20.24,0,0,1,.89,19a20.84,20.84,0,0,1,9.7-15.54A18.79,18.79,0,0,1,18.22.61,19.73,19.73,0,0,1,34.43,5.35,20.46,20.46,0,0,1,41.29,17.2a21.3,21.3,0,0,1-2.1,14.36,1.6,1.6,0,0,0-.1.23A1.82,1.82,0,0,1,37,32.9,1.88,1.88,0,0,1,35.55,31a.72.72,0,0,1,.06-.29c.36-.85.72-1.7,1.07-2.55A17.21,17.21,0,0,0,38,20.43a17.15,17.15,0,0,0-5.37-11.7,15.89,15.89,0,0,0-9.1-4.42A16.08,16.08,0,0,0,10.25,8.37,16.57,16.57,0,0,0,4.68,18.68a17.09,17.09,0,0,0,5.47,15.68,15.7,15.7,0,0,0,9,4.18,16.07,16.07,0,0,0,11.69-3,3.47,3.47,0,0,0,.37-.3,1.8,1.8,0,0,1,2-.3,2,2,0,0,1,1.1,1.78A1.62,1.62,0,0,1,33.69,38a19.4,19.4,0,0,1-10,4.35c-.46.06-.92.09-1.37.13l-.21,0Z"
+            class="cls-1"></path>
+          <path _ngcontent-kmw-c157="" id="Path_288" data-name="Path 288"
+            d="M15.9,17.27h.26l14.38,0a1.81,1.81,0,0,1,.79,3.49,1.75,1.75,0,0,1-.67.14H11.88a2.31,2.31,0,0,1-1.07-.18A1.75,1.75,0,0,1,10,18.36a1.66,1.66,0,0,1,.34-.49q2.59-2.64,5.22-5.27a1.74,1.74,0,0,1,2.45,0h0a1.75,1.75,0,0,1,0,2.46c-.64.67-1.29,1.31-1.93,2l-.23.16Z"
+            class="cls-1"></path>
+          <path _ngcontent-kmw-c157="" id="Path_289" data-name="Path 289"
+            d="M26.35,26.63h-.26l-14.4,0a1.82,1.82,0,0,1-1.81-1.26A1.79,1.79,0,0,1,11,23.13a1.6,1.6,0,0,1,.53-.09c2.19,0,4.38,0,6.58,0H30.59a1.79,1.79,0,0,1,1.87,1.69,1.73,1.73,0,0,1-.57,1.38l-2.32,2.33c-.93.94-1.85,1.88-2.79,2.8a1.74,1.74,0,0,1-2.48.05,1.79,1.79,0,0,1-.22-.25,1.7,1.7,0,0,1,.18-2.2c.63-.66,1.27-1.3,1.91-1.95l.21-.18Z"
+            class="cls-1"></path>
+        </g>
+      </svg>Transactions</h3>
+    <div class="bg-white px-5 t_bar_chart_current">
+      <canvas id="bar-chart-grouped" width="800" height="300"></canvas>
+    </div>
+    <h3 class="ms-2 heading mb-3 mt-3"><svg _ngcontent-fev-c157="" id="Layer_1" data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.51 52.26" style="height:40px;width:40px; fill: #234389;">
+      <defs _ngcontent-fev-c157=""></defs>
+      <g _ngcontent-fev-c157="" id="Group_380" data-name="Group 380">
+        <path _ngcontent-fev-c157="" id="Path_436" data-name="Path 436"
+          d="M41.6,17.45a15.89,15.89,0,1,1-15.75-16H26A16,16,0,0,1,41.6,17.45Zm-2.44,0A13.45,13.45,0,1,0,25.61,30.76h0a13.4,13.4,0,0,0,13.51-13.3v0Z"
+          class="cls-1"></path>
+        <path _ngcontent-fev-c157="" id="Path_437" data-name="Path 437"
+          d="M14.38,31.91c2.2,1.26,2.19,1.25,1.6,3.4-.85,3.08-1.68,6.17-2.51,9.26-.06.34-.1.69-.13,1,2.67-.78,5-.47,6.9,2.14l3.27-12.06h4.41l3.2,11.9a5.94,5.94,0,0,1,7.08-1.9c-.48-1.9-.86-3.45-1.27-5S36,37.3,35.55,35.6c-.64-2.34-.64-2.34,1.47-3.74l4.43,16.49c-1.92-.22-3.65-.48-5.38-.58a3.38,3.38,0,0,0-2,.49c-1.47,1-2.83,2.08-4.41,3.26L25.84,37.25l-.24,0L21.73,51.5A27.75,27.75,0,0,1,18.37,49c-1.41-1.44-3-1.29-4.74-1-1.12.16-2.24.28-3.64.46Z"
+          class="cls-1"></path>
+        <path _ngcontent-fev-c157="" id="Path_438" data-name="Path 438"
+          d="M25.72,6c1,2.1,1.9,4,2.88,5.8a2.22,2.22,0,0,0,1.36,1c2,.4,4.07.66,6.34,1-1.55,1.56-2.91,3-4.37,4.37a1.88,1.88,0,0,0-.68,2c.41,2,.7,4,1.08,6.21-1.86-1-3.61-1.79-5.27-2.79a2.33,2.33,0,0,0-2.7,0c-1.66,1-3.39,1.8-5.24,2.76.36-2.22.63-4.28,1.07-6.29a1.73,1.73,0,0,0-.67-1.85c-1.45-1.39-2.86-2.83-4.46-4.41,2.32-.36,4.4-.63,6.47-1a2,2,0,0,0,1.25-.92C23.78,10.06,24.68,8.14,25.72,6Zm5.3,9.5c-1.19-.22-2.6-.12-3.48-.75s-1.2-2-2-3.45c-.53,3.19-2.41,4.27-5.29,4.23,2.53,1.62,3.18,3.67,2.06,6.44,2.32-2,4.5-1.86,6.85,0C28,19.2,28.62,17.21,31,15.54Z"
+          class="cls-1"></path>
+      </g>
+    </svg>Top Predicted Products</h3>
+    <div class="top_predicted_products_div">
+      
+      <table class="table table-bordered top_predicted_products_table">
+        <tr class="text-white" style="background-color: #1d477f;">
+          <th>Product Details</th>
+          <th>Quantity</th>
+          <th>Similar Products</th>
+        </tr>
+        <tbody class="border">
+
+          {% for q in product_lst_top %}
+          {% for p in product_list %}
+          {% if p.ID == q.id %}
+
+          <tr class="bg-white">
+            <td>
+              {{ p.productName }}
+            </td>
+
+            <td>{{q.quntity}}</td>
+
+            <td>
+              {% for sm in similar_product_list %}
+
+              {% for p1 in product_list %}
+
+              {% if p1.ID == sm.recommendedProdID_id and q.id == sm.sourceProdID_id %}
+
+              <li>
+                {{ p1.productName}}
+              </li>
+              {% endif %}
+              {%endfor%}
+
+              {%endfor%}
+            </td>
+
+          </tr>
+          {% endif %}
+
+
+
+          {%endfor%}
+          {%endfor%}
+        </tbody>
+      </table>
+
+
+    </div>
+    <h3 class="ms-2 heading mb-3"><svg _ngcontent-kmw-c157="" class="me-2" id="Layer_1" data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.45 42.79" style="height:40px;width:40px; fill: #234389;">
+        <g _ngcontent-kmw-c157="" id="Group_13" data-name="Group 13">
+          <path _ngcontent-kmw-c157="" id="Path_287" data-name="Path 287"
+            d="M20.32,42.52,19,42.39a19.09,19.09,0,0,1-7.66-2.48A20.81,20.81,0,0,1,1.26,26.14,20.24,20.24,0,0,1,.89,19a20.84,20.84,0,0,1,9.7-15.54A18.79,18.79,0,0,1,18.22.61,19.73,19.73,0,0,1,34.43,5.35,20.46,20.46,0,0,1,41.29,17.2a21.3,21.3,0,0,1-2.1,14.36,1.6,1.6,0,0,0-.1.23A1.82,1.82,0,0,1,37,32.9,1.88,1.88,0,0,1,35.55,31a.72.72,0,0,1,.06-.29c.36-.85.72-1.7,1.07-2.55A17.21,17.21,0,0,0,38,20.43a17.15,17.15,0,0,0-5.37-11.7,15.89,15.89,0,0,0-9.1-4.42A16.08,16.08,0,0,0,10.25,8.37,16.57,16.57,0,0,0,4.68,18.68a17.09,17.09,0,0,0,5.47,15.68,15.7,15.7,0,0,0,9,4.18,16.07,16.07,0,0,0,11.69-3,3.47,3.47,0,0,0,.37-.3,1.8,1.8,0,0,1,2-.3,2,2,0,0,1,1.1,1.78A1.62,1.62,0,0,1,33.69,38a19.4,19.4,0,0,1-10,4.35c-.46.06-.92.09-1.37.13l-.21,0Z"
+            class="cls-1"></path>
+          <path _ngcontent-kmw-c157="" id="Path_288" data-name="Path 288"
+            d="M15.9,17.27h.26l14.38,0a1.81,1.81,0,0,1,.79,3.49,1.75,1.75,0,0,1-.67.14H11.88a2.31,2.31,0,0,1-1.07-.18A1.75,1.75,0,0,1,10,18.36a1.66,1.66,0,0,1,.34-.49q2.59-2.64,5.22-5.27a1.74,1.74,0,0,1,2.45,0h0a1.75,1.75,0,0,1,0,2.46c-.64.67-1.29,1.31-1.93,2l-.23.16Z"
+            class="cls-1"></path>
+          <path _ngcontent-kmw-c157="" id="Path_289" data-name="Path 289"
+            d="M26.35,26.63h-.26l-14.4,0a1.82,1.82,0,0,1-1.81-1.26A1.79,1.79,0,0,1,11,23.13a1.6,1.6,0,0,1,.53-.09c2.19,0,4.38,0,6.58,0H30.59a1.79,1.79,0,0,1,1.87,1.69,1.73,1.73,0,0,1-.57,1.38l-2.32,2.33c-.93.94-1.85,1.88-2.79,2.8a1.74,1.74,0,0,1-2.48.05,1.79,1.79,0,0,1-.22-.25,1.7,1.7,0,0,1,.18-2.2c.63-.66,1.27-1.3,1.91-1.95l.21-.18Z"
+            class="cls-1"></path>
+        </g>
+      </svg>Product Recommendations Using Market Basket Analysis</h3>
+
+    <div class="market-basket-top-table-div">
+      <h3 class="heading">Top Items</h3>
+      <table class="table table-bordered market-basket-top-table">
+        <tr class="text-white" style="background-color: #1d477f;">
+          <th>Antecedent Name</th>
+          <th>Consequent Name</th>
+          <th>Confidence Score</th>
+        </tr>
+        <tbody class="border">
+          {% for mt in market_basket_top %}
+          {% for p in product_list %}
+          {% for cp in product_list %}
+          {% if p.ID == mt.antecedentProdID_id %}
+          {% if cp.ID == mt.consequentProdID_id %}
+          <tr class="bg-white">
+            <td> {{ p.productName }}</td>
+            <td> {{ cp.productName }}</td>
+            <td>
+              <script>document.write({{ mt.confidenceScore }}* 100)</script>
+            </td>
+          </tr>
+          {% endif %}
+          {% endif %}
+          {%endfor%}
+          {%endfor%}
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-4 market-basket-bottom-table-div">
+      <h3 class="heading">Bottom Items</h3>
+      <table class="table table-bordered market-basket-bottom-table">
+        <tr class="text-white" style="background-color: #1d477f;">
+          <th>Antecedent Name</th>
+          <th>Consequent Name</th>
+          <th>Confidence Score</th>
+        </tr>
+        <tbody class="border">
+          {% for mb in market_basket_bottom %}
+          {% for p in product_list %}
+          {% for cp in product_list %}
+          {% if p.ID == mb.antecedentProdID_id %}
+          {% if cp.ID == mb.consequentProdID_id %}
+          <tr class="bg-white">
+            <td> {{ p.productName }}</td>
+            <td> {{ cp.productName }}</td>
+            <td>
+              <script>document.write({{ mb.confidenceScore }}* 100)</script>
+            </td>
+          </tr>
+          {% endif %}
+          {% endif %}
+          {%endfor%}
+          {%endfor%}
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+
+
+</section>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+  new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["Income", "Number Of Transactions", "Number of Item in Purchase", "Average Size of purchase"],
+      datasets: [
+        {
+          label: "{{previous_month.forMonth}}",
+          backgroundColor: "#8e5ea2",
+          data: [{{ transaction_summary_1.income }}, {{ transaction_summary_1.transactions }},{{ transaction_summary.itemsInPurchase }}, {{ transaction_summary.avgSizeOfPurchase }}]
+          },
+    {
+      label: "{{current_month.forMonth}}",
+      backgroundColor: "#3e95cd",
+      data: [{{ transaction_summary.income }}, {{ transaction_summary.transactions }}, {{ transaction_summary.itemsInPurchase }}, {{ transaction_summary.avgSizeOfPurchase }}]
+          }
+        ]
+      },
+    options: {
+    title: {
+      display: true,
+      text: ''
+    }
+  }
+  });
+</script>
+{% endblock %}
